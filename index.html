@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Event</title>
+    <link rel="stylesheet" href="stye.css" />
+  </head>
+  <body>
+    <div class="back" id="back"></div>
+    <div class="body" id="body">
+      <div class="content">
+        <h2>To Do List</h2>
+
+        <div class="div">
+          <input id="input_text" type="text" placeholder="Add your Todos..." />
+          <button id="register_btn" class="register_btn">Add +</button>
+        </div>
+
+        <!-- modal  -->
+        <div id="modal" class="modal">
+          <div class="row">
+            <input
+              class="modal_input"
+              id="modal_input"
+              type="text"
+              placeholder="Add your Todos..."
+            />
+            <button class="modal_btn" id="modal_btn">Add +</button>
+          </div>
+        </div>
+
+        <ol class="list" id="list"></ol>
+      </div>
+    </div>
+
+    <div class="eror" id="error">
+      <div class="eror_img" id="error_img">
+        <img
+          id="img"
+          width="30px"
+          height="30px"
+          src="./img/error.jpg"
+          alt=""
+        />
+      </div>
+      <h4>ERROR</h4>
+
+      <h3>Siz ma'lumot kiritmadingiz...</h3>
+      <div class="eror_btn">
+        <button class="btn_one" id="btn_one">Cancel</button>
+        <button class="btn_two" id="btn_two">Try again</button>
+      </div>
+    </div>
+    
+
+    <script src="app.js"></script>
+  </body>
+</html>

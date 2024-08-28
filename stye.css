@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.body {
+  height: 100vh;
+  position: relative;
+  padding: 50px 0px 50px 0px;
+}
+
+.back{
+  background: rgba(66, 55, 55, 0.5);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  display: none;
+}
+
+.back_see{
+  display: inline-block;
+}
+
+
+.body_see {
+  display: inline-block;
+}
+
+.content {
+  border: 8px double slateblue;
+  margin: 0 auto;
+  width: 900px;
+  border-radius: 20px;
+  margin-top: 0px;
+
+  margin-left: 250px;
+}
+
+.content_see{
+  display: inline-block;
+}
+
+h2 {
+  background: linear-gradient(
+    to top right,
+    rgba(60, 27, 224, 0.8),
+    rgba(89, 5, 110, 0.9)
+  );
+  border-radius: 12px 12px 0px 0px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  letter-spacing: 2px;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  cursor: pointer;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.div {
+  padding: 70px 40px 50px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.div input {
+  width: 600px;
+  padding: 20px 20px;
+  font-size: 20px;
+  border: 2px solid;
+
+  border-radius: 5px;
+}
+
+.div button {
+  background: linear-gradient(
+    to top right,
+    rgba(60, 27, 224, 0.8),
+    rgba(89, 5, 110, 0.9)
+  );
+  height: 50px;
+  width: 100px;
+  border-radius: 10%;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.list {
+  padding: 45px 20px 4px 20px;
+}
+
+.list li {
+  background: linear-gradient(
+    to right top,
+    rgba(60, 27, 224, 0.9),
+    rgba(89, 5, 110, 0.7)
+  );
+  border-radius: 10px;
+  display: flex;
+  height: 80px;
+  font-family: monospace;
+  width: 800px;
+  padding: 0px 40px;
+  justify-content: space-between;
+  color: white;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.list li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn button {
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  color: white;
+}
+
+#item_delete {
+  padding: 10px 30px;
+  background: red;
+}
+
+.item_edit_btn {
+  padding: 10px 40px;
+  background: rgb(47, 255, 75);
+}
+
+.eror {
+  position: relative;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  width: 800px;
+  padding: 10px 20px 50px 0px;
+  background: white;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  text-align: center;
+  /* z-index: 99px; */
+
+}
+
+.error_see {
+  display: inline-block;
+}
+
+.eror_img {
+  padding: 10px 10px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.eror_btn button {
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  padding: 20px 40px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+
+
+.btn_one {
+  background: rgba(255, 0, 0, 0.9);
+}
+
+
+
+
+.btn_two {
+  background: rgb(47, 255, 75);
+}
+
+
+
+h3 {
+  font-family: monospace;
+  letter-spacing: 1px;
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: monospace;
+  letter-spacing: 1px;
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.modal {
+  background: linear-gradient(
+    to top right,
+    rgba(89, 5, 110, 0.9),
+    rgba(60, 27, 224, 0.8)
+  );
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  letter-spacing: 2px;
+  color: white;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 600;
+  display: none;
+}
+
+.modal_see {
+  display: inline-block;
+}
+
+.row {
+  padding: 40px 40px 70px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal_input {
+  width: 600px;
+  padding: 20px 20px;
+  font-size: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.modal_btn {
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  border: 0;
+  padding: 10px 20px;
+  background: rgb(47, 255, 75);
+}
+
+/* .container{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(93.2deg, #4582ff 14.4%, #1b45a6 90.8%);
+}
+
+.todo-app h2 i{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    margin-left: 20px;
+}
+
+.row{
+    
+    justify-content: center;
+    align-items: center;
+    background: var(--light-color);
+    outline: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+.row input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: transparent;
+    letter-spacing: 1px;
+}
+
+.row input ::placeholder{
+    color: var(--primary-color);
+}
+
+.row button{
+    background-image: linear-gradient(100% 100% at 100%  0, #5adaff 0, #4580ff 100%);
+    border: none;
+    border-radius: 30px;
+
+} */
